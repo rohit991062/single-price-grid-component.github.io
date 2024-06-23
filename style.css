@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto; /* Adjusted to auto for both rows */
+  grid-template-columns: 1fr; /* Single column layout */
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.first-row {
+  padding: 30px;
+}
+
+.second-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-us h1 {
+  color: #2dd4bf;
+}
+
+.about-us h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.about-us p {
+  color: hsl(218, 22%, 67%);
+}
+
+.Subscription {
+  background-color: #2dd4bf;
+  padding: 30px;
+}
+
+.Subscription h3 {
+  color: white;
+}
+
+.Subscription p {
+  display: flex;
+  align-items: center;
+  color: #ccfbf1;
+}
+
+.Subscription p span {
+  font-size: 2em;
+  color: white;
+}
+
+.Subscription button {
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 100%;
+  max-width: 250px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3{
+  color: white;
+}
+
+.why-us {
+  background-color: #5eead4;
+  padding: 30px;
+}
+
+.why-us ul {
+  padding-left: 0; 
+}
+
+.why-us ul li {
+  list-style: none;
+  color: #ccfbf1;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    max-width: 90%; 
+  }
+
+  .second-row {
+    grid-template-columns: 1fr; 
+  }
+
+  .Subscription button {
+    width: 100%;
+    max-width: none; 
+  }
+}
